@@ -9,6 +9,7 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: italic;
+    background-color: white;
 }
 
 header {
@@ -38,15 +39,15 @@ nav ul {
     list-style-type: none;
     padding: 20px;
     margin: 0;
-    background-color: lightblue;
-    color: blanchedalmond;
+    background-color: #1e4d6b;
+    color: white;
 }
 
 nav a:hover {
     color: white;
     text-decoration: overline;
     background-color: black;
-    padding: 20px;
+    padding: 5px 10px;
 }
 
 main {
