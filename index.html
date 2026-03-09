@@ -4,42 +4,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christensen KOH | WDD 131</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <meta
+        description="WDD 131 – Dynamic Web Fundamentals | Christensen KOH | This is my homepage. It will display some key information about me and my work." />
+    <meta author="Christensen KOH" />
+    <title>WDD 131 – Dynamic Web Fundamentals | Christensen KOH</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
 
     <header>
-        <h2>header Content</h2>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/christensen-esaie-koh-60516b23b">LinkedIn</a></li>
+                <li><a href="https://canvas.instructure.com/">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/ot/lam/3?lang=eng">Scripture</a></li>
+                <li><a href="">Final Project</a></li>
 
-        <ul>
-            <li>Home</li>
-            <li>Projects</li>
-            <li>Services</li>
-            <li>Contact Us</li>
-        </ul>
+            </ul>
+
+        </nav>
+        <h1>Christensen KOH</h1>
 
     </header>
     <main>
 
-        <div class="main-content">
-            <h2>Main Content</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
-        </div>
+        <section class="card">
+            <div class="card-header">
+                <h2>About Me</h2>
+            </div>
+            <div class="card-body">
+                <img src="images/profile.jpg" alt="Profile Image" class="profile-image">
+                <div class="my-bio">
+                    <p>I am Kemonaho Christensen Esaie KOH, and I go by Christensen. I was born and grew up in Abidjan,
+                        Ivory
+                        Coast. I am the last born of a family of five children. I am married and have one child and he
+                        is my
+                        pride and joy. I am currently a student at BYU-Idaho, majoring in Software Development.<br>In my
+                        free
+                        time, I enjoy playing some cool games and watch some movies. As for my hobby, I enjoy hiking and
+                        camping
+                        in the mountains and forests. <br> I have a passion for learning and creating things that can
+                        make a
+                        positive impact on people's lives.</p>
+                </div>
+            </div>
+
+            </div>
+
+            <hr>
+
+            <h2 class="country-title">Ivory Coast</h2>
+
+            <div class="my-country">
+                <div class="flag-wrapper">
+                    <img src="images/flag.jpg" alt="Ivory Coast Flag" class="flag-image">
+                    <div class="flag-caption">Ivory Coast Flag</div>
+                </div>
+
+
+                <div class="country-info">
+                    <p>Ivory Coast, is a nation in western Africa bordered by Mali, Burkina Faso, Ghana, Liberia, and
+                        Guinea,
+                        with the Gulf
+                        of
+                        Guinea to its south. The country features diverse landscapes, including a coastal fringe with
+                        lagoons,
+                        an equatorial
+                        forest zone, a cultivated forest area, and a northern savanna region. Ivory Coast is home to
+                        over 60
+                        ethnic
+                        groups, many of whom have affiliations with larger groups in neighboring countries, such as the
+                        Akan
+                        in
+                        Ghana and
+                        the
+                        Kru peoples in Liberia. The economy, while facing challenges like recessions and fluctuating
+                        commodity
+                        prices, is
+                        largely based on agriculture, with cocoa and coffee being major exports, making Ivory Coast the
+                        world's
+                        leading cocoa producer. Abidjan serves as the chief port and de facto capital, a vital shipping
+                        and
+                        financial hub for West Africa, while Yamoussoukro is the official administrative capital.</p>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section class="card">
+            <div class="card-header">Quick links</div>
+            <div class="card-body">
+                <ul class="list">
+                    <li> <a href="https://en.wikipedia.org/wiki/Yamoussoukro">Capital</a></li>
+                    <li> <a href="https://en.wikipedia.org/wiki/Ivory_Coast">Population</a></li>
+                    <li> <a href="https://en.wikipedia.org/wiki/French_language">Language</a></li>
+                    <li> <a href="https://en.wikipedia.org/wiki/CFA_Franc">Currency</a></li>
+                </ul>
+            </div>
+        </section>
 
     </main>
 
-    <aside>
-        <h2>Aside Content</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
-
-    </aside>
-
     <footer>
-        <h2>Footer Content</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
-
+        <p>&copy; &#9827; <span id="current-year">2023</span> &#9827; Christensen KOH | Ivory Coast</p>
+        <p><span id="lastModified">Last Modified: </span></p>
     </footer>
 </body>
 

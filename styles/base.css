@@ -1,0 +1,171 @@
+:root {
+    --primary-color: #1e4d6b;
+    --secondary-color: #f0f2f5;
+    --border-color: #ddd;
+    --text-color: #333;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+}
+
+header {
+    padding-bottom: 2px;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 100;
+    font-size: 2.5em;
+    color: #222;
+    margin-bottom: 10px;
+
+}
+
+#course-title {
+    display: block;
+    background-color: rgb(17, 17, 77);
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 20px;
+    margin: 0;
+    background-color: lightblue;
+    color: blanchedalmond;
+}
+
+nav a:hover {
+    color: white;
+    text-decoration: overline;
+    background-color: black;
+    padding: 20px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+
+}
+
+.card-header {
+    background-color: var(--primary-color);
+    padding: 15px;
+    color: white;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.card-body {
+    padding: 15px;
+    flex-grow: 1;
+}
+
+.my-bio {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.profile-image {
+    float: right;
+    width: 150px;
+    height: 150px;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 10px 0;
+}
+
+.country-title {
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #222;
+}
+
+.my-country {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.flag-wrapper {
+    flex-shrink: 0;
+    text-align: center;
+    width: 140px;
+}
+
+.flag-image {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 4px;
+}
+
+.fig-caption {
+    font-style: italic;
+    font-size: 0.8em;
+    color: #666
+}
+
+.country-info {
+    flex: 1;
+    font-size: 0.95em;
+}
+
+.list {
+    padding-left: 10px;
+    list-style-type: none;
+}
+
+.list li {
+    margin-bottom: 10px;
+}
+
+.list a {
+    color: var(--primary-color);
+    text-decoration: underline;
+    font-size: 0.95em;
+}
+
+.list a:hover {
+    color: white;
+    text-decoration: overline;
+    background-color: black;
+    padding: 5px;
+}
+
+footer {
+    display: block;
+    background-color: rgb(17, 17, 77);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
