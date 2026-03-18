@@ -5,7 +5,7 @@ document.getElementById("current-year").textContent = currentYear;
 document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
 
 
-const mainnav = document.querySelector('.navigation');
+const mainnav = document.querySelector('.nav');
 const hambutton = document.querySelector('#menu');
 
 hambutton.addEventListener('click', () => {
