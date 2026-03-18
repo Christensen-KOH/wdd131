@@ -42,17 +42,17 @@ header {
     display: block;
 }
 
-.nav {
+.navigation {
     display: none;
     background-color: #380f6b;
 }
 
-.nav.show {
+.navigation.show {
     display: flex;
     flex-direction: column;
 }
 
-.nav ul {
+.navigation ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -61,7 +61,7 @@ header {
     text-align: center;
 }
 
-.nav li a {
+.navigation li a {
     display: block;
     padding: 15px;
     color: var(--text-light);
@@ -69,7 +69,7 @@ header {
     font-family: var(--font-heading);
 }
 
-.nav li a:hover {
+.navigation li a:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
