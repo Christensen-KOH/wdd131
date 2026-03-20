@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivory Coast - Côte d'Ivoire</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Ivory Coast</h1>
+        <p class="subtitle">Côte d'Ivoire</p>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <picture>
+                <source media="(min-width: 1024px)" srcset="images/ivory-coast-large.webp">
+                <source media="(min-width: 768px)" srcset="images/ivory-coast-medium.webp">
+                <img src="images/ivory-coast-small.webp" alt="Landscape of Ivory Coast">
+            </picture>
+        </section>
+
+        <!-- Content Section -->
+        <section class="content">
+            <div class="info-grid">
+                <!-- About Section -->
+                <article class="card about">
+                    <h2>About</h2>
+                    <p>Ivory Coast, officially the Republic of Côte d'Ivoire, is a West African nation known for its
+                        rich cultural heritage, diverse wildlife, and cocoa production. The country is home to vibrant
+                        cities, beautiful beaches, and tropical rainforests.</p>
+                </article>
+
+                <!-- Weather Section -->
+                <article class="card weather">
+                    <h2>Weather</h2>
+                    <div class="weather-content">
+                        <div class="mobile-weather">
+                            <svg class="weather-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="40" r="25" fill="#FFD700" />
+                                <path d="M 30 60 Q 30 70 40 75 Q 50 80 60 75 Q 70 70 70 60" fill="#87CEEB" />
+                            </svg>
+                        </div>
+                        <div class="weather-stats">
+                            <p><strong>Temperature:</strong> <span id="temp">24</span>°C</p>
+                            <p><strong>Condition:</strong> Partly Cloudy</p>
+                            <p><strong>Wind Speed:</strong> <span id="windSpeed">12</span> km/h</p>
+                        </div>
+                    </div>
+                    <div class="wind-chill">
+                        <p><strong>Wind Chill:</strong> <span id="windChill">N/A</span>°C</p>
+                    </div>
+                </article>
+
+                <!-- Facts Section -->
+                <article class="card facts">
+                    <h2>Quick Facts</h2>
+                    <ul>
+                        <li><strong>Capital:</strong> Yamoussoukro (official), Abidjan (de facto)</li>
+                        <li><strong>Population:</strong> ~27 million</li>
+                        <li><strong>Language:</strong> French</li>
+                        <li><strong>Currency:</strong> West African CFA franc</li>
+                        <li><strong>Area:</strong> 322,463 km²</li>
+                    </ul>
+                </article>
+
+                <!-- Culture Section -->
+                <article class="card culture">
+                    <h2>Culture</h2>
+                    <p>Ivory Coast has a vibrant cultural scene with traditional music, dance, and art. The country is
+                        famous for its Basidjan International Festival, traditional mask carving, and distinctive
+                        textile patterns. The people are known for their warm hospitality and love of celebration.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Ivory Coast Info Page | Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

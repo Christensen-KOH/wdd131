@@ -1,0 +1,249 @@
+/* CSS Variables */
+:root {
+    --primary-orange: #FF6B35;
+    --primary-white: #FFFFFF;
+    --primary-green: #1B4332;
+    --accent-gold: #FFD700;
+    --text-dark: #2C3E50;
+    --text-light: #555555;
+    --border-color: #E0E0E0;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --spacing-unit: 1rem;
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: #F5F5F5;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, var(--primary-orange) 0%, var(--primary-green) 100%);
+    color: var(--primary-white);
+    padding: calc(var(--spacing-unit) * 2) var(--spacing-unit);
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header .subtitle {
+    font-size: 1.2rem;
+    font-weight: 300;
+    opacity: 0.95;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-unit);
+}
+
+/* Hero Section */
+.hero {
+    margin: calc(var(--spacing-unit) * 2) 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.hero picture {
+    display: block;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Content Grid */
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: calc(var(--spacing-unit) * 1.5);
+    margin: calc(var(--spacing-unit) * 2) 0;
+}
+
+/* Card Styles */
+.card {
+    background-color: var(--primary-white);
+    border-left: 4px solid var(--primary-orange);
+    padding: calc(var(--spacing-unit) * 1.5);
+    border-radius: 4px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+    color: var(--primary-green);
+    margin-bottom: var(--spacing-unit);
+    font-size: 1.5rem;
+    border-bottom: 2px solid var(--primary-orange);
+    padding-bottom: 0.5rem;
+}
+
+.card p {
+    color: var(--text-light);
+    margin-bottom: var(--spacing-unit);
+}
+
+.card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.card li {
+    padding: 0.5rem 0;
+    color: var(--text-light);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.card li:last-child {
+    border-bottom: none;
+}
+
+/* Weather Section */
+.weather {
+    border-left-color: var(--accent-gold);
+}
+
+.weather h2::after {
+    content: " ☁️";
+}
+
+.weather-content {
+    display: flex;
+    gap: var(--spacing-unit);
+    margin-bottom: var(--spacing-unit);
+    align-items: center;
+}
+
+.mobile-weather {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather-icon {
+    width: 80px;
+    height: 80px;
+    display: none;
+}
+
+.weather-stats {
+    flex: 1;
+}
+
+.weather-stats p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.wind-chill {
+    background-color: #F9F9F9;
+    padding: var(--spacing-unit);
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+}
+
+.wind-chill p {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary-green);
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-green);
+    color: var(--primary-white);
+    text-align: center;
+    padding: calc(var(--spacing-unit) * 1.5);
+    margin-top: calc(var(--spacing-unit) * 3);
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Mobile Media Query (up to 767px) */
+@media screen and (max-width: 767px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header .subtitle {
+        font-size: 1rem;
+    }
+
+    .weather-icon {
+        display: block;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Tablet Media Query (768px to 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    header h1 {
+        font-size: 2.3rem;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .weather-icon {
+        display: block;
+    }
+}
+
+/* Desktop Media Query (1024px and up) */
+@media screen and (min-width: 1024px) {
+    header h1 {
+        font-size: 3rem;
+    }
+
+    header .subtitle {
+        font-size: 1.3rem;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: calc(var(--spacing-unit) * 2);
+    }
+
+    .about {
+        grid-column: 1 / -1;
+    }
+
+    .weather-icon {
+        display: none;
+    }
+
+    .card {
+        border-left-width: 5px;
+    }
+}
