@@ -32,7 +32,7 @@ function displayWindChill() {
  * Sets the current year in the footer
  */
 function setYear() {
-    const yearElement = document.getElementById('year');
+    const yearElement = document.getElementById('current-year');
     yearElement.textContent = new Date().getFullYear();
 }
 
@@ -42,7 +42,7 @@ function setYear() {
 function setLastModified() {
     const lastModElement = document.getElementById('lastModified');
     const lastModDate = new Date(document.lastModified);
-    lastModElement.textContent = lastModDate.toLocaleString();
+    lastModElement.textContent = "Last Modified: " + document.lastModified;
 }
 
 // Run functions when page loads
