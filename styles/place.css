@@ -42,7 +42,7 @@ header h1 {
 header .subtitle {
     font-size: 1.2rem;
     font-weight: 300;
-    opacity: 0.95;
+    opacity: 1;
 }
 
 /* Main Content */
@@ -127,7 +127,7 @@ main {
 }
 
 .weather h2::after {
-    content: " ☁️";
+    content: "";
 }
 
 .weather-content {
@@ -197,7 +197,7 @@ footer p {
     }
 
     .weather-icon {
-        display: block;
+        display: none;
     }
 
     .info-grid {
@@ -216,7 +216,7 @@ footer p {
     }
 
     .weather-icon {
-        display: block;
+        display: none;
     }
 }
 
@@ -240,7 +240,11 @@ footer p {
     }
 
     .weather-icon {
-        display: none;
+        display: block;
+    }
+
+    .weather h2::after {
+        content: " ☁️";
     }
 
     .card {
