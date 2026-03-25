@@ -1,6 +1,6 @@
 /* CSS Variables */
 :root {
-    --primary-orange: #FF6B35;
+    --primary-orange: #c54415;
     --primary-white: #FFFFFF;
     --primary-green: #1B4332;
     --accent-gold: #FFD700;
@@ -41,7 +41,7 @@ header h1 {
 
 header .subtitle {
     font-size: 1.2rem;
-    font-weight: 300;
+    font-weight: 400;
     opacity: 1;
 }
 
@@ -197,7 +197,7 @@ footer p {
     }
 
     .weather-icon {
-        display: none;
+        display: block;
     }
 
     .info-grid {
@@ -240,7 +240,7 @@ footer p {
     }
 
     .weather-icon {
-        display: block;
+        display: none;
     }
 
     .weather h2::after {
