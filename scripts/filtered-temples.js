@@ -58,26 +58,26 @@ const temples = [
     {
         templeName: "Abidjan Ivory Coast",
         location: "Abidjan, Ivory Coast",
-        dedicated: "2024, March, 3",
-        area: 30000,
+        dedicated: "2025, May, 25",
+        area: 17362,
         imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/abidjan-ivory-coast/400x250/abidjan-ivory-coast-temple-exterior.jpg"
+            "https://churchofjesuschristtemples.org/assets/img/temples/abidjan-ivory-coast-temple/abidjan-ivory-coast-temple-58993-main.jpg"
     },
     {
         templeName: "Accra Ghana",
         location: "Accra, Ghana",
-        dedicated: "2024, January, 6",
-        area: 30000,
+        dedicated: "2004, January, 11",
+        area: 17500,
         imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/accra-ghana/400x250/accra-ghana-temple-exterior.jpg"
+            "https://churchofjesuschristtemples.org/assets/img/temples/accra-ghana-temple/accra-ghana-temple-13760-main.jpg"
     },
     {
-        templeName: "Congo Brazzaville",
-        location: "Brazzaville, Congo",
-        dedicated: "2023, August, 6",
-        area: 25000,
+        templeName: "Kinshasa Democratic Republic of the Congo",
+        location: "Kinshasa, Democratic Republic of the Congo",
+        dedicated: "2019, April, 14",
+        area: 12000,
         imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/congo-brazzaville/400x250/congo-brazzaville-temple-exterior.jpg"
+            "https://churchofjesuschristtemples.org/assets/img/temples/kinshasa-democratic-republic-of-the-congo-temple/kinshasa-democratic-republic-of-the-congo-temple-3533-main.jpg"
     },
 ];
 
