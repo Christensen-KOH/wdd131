@@ -1,12 +1,5 @@
 /* Form CSS - Responsive Design */
 
-:root {
-    --accent-color: #e74c3c;
-    --success-color: #27ae60;
-    --input-border: #bbb;
-    --focus-color: #3498db;
-}
-
 /* Main Form Container */
 .form-container,
 .confirmation-container {
