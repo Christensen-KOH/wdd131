@@ -1,12 +1,8 @@
 /* Form CSS - Responsive Design */
 
 :root {
-    --primary-color: #1e4d6b;
-    --secondary-color: #f0f2f5;
     --accent-color: #e74c3c;
     --success-color: #27ae60;
-    --text-color: #333;
-    --light-border: #ddd;
     --input-border: #bbb;
     --focus-color: #3498db;
 }
@@ -262,7 +258,7 @@
 
 .review-summary {
     background-color: white;
-    border: 1px solid var(--light-border);
+    border: 1px solid var(--border-color);
     border-radius: 6px;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
@@ -345,7 +341,7 @@
 }
 
 .btn-secondary {
-    background-color: var(--light-border);
+    background-color: var(--border-color);
     color: var(--text-color);
     flex: 1;
     border: 1px solid var(--input-border);
