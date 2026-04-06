@@ -1,13 +1,10 @@
 // Product Array
 const products = [
-    { id: "1", name: "Smart Home Hub" },
-    { id: "2", name: "Wireless Earbuds" },
-    { id: "3", name: "USB-C Charging Cable" },
-    { id: "4", name: "Portable Power Bank" },
-    { id: "5", name: "LED Desk Lamp" },
-    { id: "6", name: "Bluetooth Speaker" },
-    { id: "7", name: "Screen Protector" },
-    { id: "8", name: "Phone Stand" }
+    { id: "fc-1888", name: "flux capacitor", averagerating: 4.5 },
+    { id: "fc-2050", name: "power laces", averagerating: 4.7 },
+    { id: "fs-1987", name: "time circuits", averagerating: 3.5 },
+    { id: "ac-2000", name: "low voltage reactor", averagerating: 3.9 },
+    { id: "jj-1969", name: "warp equalizer", averagerating: 5.0 }
 ];
 
 // Initialize on form page
