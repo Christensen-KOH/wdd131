@@ -4,127 +4,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content=" Improve your English fluency with Speak up with Chris. Book personalized, conversational English lessons and access custom learning resources online." >
-    <meta name="author" content=" Christensen KOH" >
-    <title>Speak up with Chris | Site Plan</title>
-    <link rel="stylesheet" href="styles/siteplan.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400;600&display=swap"
-        rel="stylesheet">
+    <title>Home | Speak Up with Chris</title>
+    <meta name="description"
+        content="Improve your English fluency with Speak up with Chris. Book personalized, conversational English lessons.">
+    <meta name="author" content="Christensen KOH">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
 
     <header>
-        <h1>Site Plan: Speak up with Chris</h1>
+        <img src="images/logo.png" alt="Speak Up with Chris logo">
+        <nav>
+            <ol>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Chris</a></li>
+                <li><a href="lessons.html">Lessons</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ol>
+        </nav>
     </header>
 
     <main>
-        <section id="site-name">
-            <h2>Site Name</h2>
-            <p><strong>Speak up with Chris</strong></p>
-            <p><em>Description:</em> This name centers the relationship between the tutor and the student. It is
-                approachable, encourages active participation ("Speak up"), and clearly identifies the personalized
-                nature of the English tutoring services provided. It is memorable and professional.</p>
-            <p><em>Optional domain availability:</em> speakupwithchris.com</p>
-        </section>
+        <div class="hero">
+            <img src="images/home-hero.jpg" alt="Online English Lesson">
+            <h1>Speak Up with Chris</h1>
+        </div>
 
-        <section id="site-purpose">
-            <h2>Site Purpose</h2>
-            <p>The site serves as a comprehensive, dynamic portal for English language learners and their instructor. It
-                provides a seamless student experience for booking interactive, conversational English lessons,
-                accessing custom-tailored homework and grammar resources, and tracking learning progress. For the
-                teacher, it acts as a backend CRM and scheduling tool to manage student data, availability, and session
-                notes.</p>
-        </section>
+        <div class="hero-msg">
+            <p>Master Conversational English</p>
+            <a href="lessons.html" class="cta-button">Book a Lesson</a>
+        </div>
 
-        <section id="scenarios">
-            <h2>Scenarios</h2>
-            <p>These questions represent the target audience (adult English learners, specifically Russian-speaking
-                professionals) seeking to use the platform:</p>
-            <ul>
-                <li><strong>Scenario 1:</strong> "How can I easily see Chris's available time slots this week and book
-                    my next conversational English lesson?"</li>
-                <li><strong>Scenario 2:</strong> "Where can I log in to download the engineering vocabulary worksheet
-                    from our previous lesson and upload my completed homework?"</li>
-                <li><strong>Scenario 3:</strong> "How do I check my lesson history to see how many classes I have
-                    completed this month?"</li>
-            </ul>
-        </section>
-
-        <section id="color-schema">
-            <h2>Color Schema</h2>
-            <p>The color palette is designed to build trust while maintaining a welcoming, educational environment.</p>
-            <ul>
-                <li><strong>Primary Color (Teal/Turquoise - #008080):</strong> Used for call-to-action buttons (e.g.,
-                    "Book a Lesson"), active navigation links, and section highlights. It represents clarity and
-                    communication.</li>
-                <li><strong>Secondary Color (Slate Gray/Navy - #2F4F4F):</strong> Used for the main header, footer
-                    background, and primary headings (H1, H2). It grounds the design and represents professionalism and
-                    structure.</li>
-                <li><strong>Background Color (Off-White/Light Gray - #F8F9FA):</strong> Used for the overarching body
-                    background to keep the interface clean and reduce eye strain when reading text.</li>
-            </ul>
-        </section>
-
-        <section id="typography">
-            <h2>Typography</h2>
-            <p>The typography pairs a bold, modern font for structure with a highly readable font for learning
-                materials.</p>
-            <ul>
-                <li><strong>Heading Font: <em>Montserrat</em>.</strong> Used for the site logo text, primary headings
-                    (H1, H2, H3), and navigation menu items. It provides a clean, structural, and modern look.</li>
-                <li><strong>Body Font: <em>Open Sans</em>.</strong> Used for all paragraphs, lists, form labels, and
-                    instructional text. It is a highly legible sans-serif font, which is crucial for users who are
-                    reading in a second language.</li>
-            </ul>
-        </section>
-
-        <section id="wireframes">
-            <h2>Wireframes (Home/Booking Page Layout)</h2>
-            <p>Below are structural representations of how the main student dashboard will adapt across devices.</p>
-
-            <div class="wireframe-container">
-                <div class="wireframe-box">
-                    <h3>Desktop View</h3>
-                    <ul>
-                        <li><strong>Header:</strong> Logo on far left. Navigation links (Dashboard, Book Lesson,
-                            Resources, Logout) aligned to the right.</li>
-                        <li><strong>Hero Section:</strong> Welcome message ("Welcome back, [Student Name]") spanning the
-                            top.</li>
-                        <li><strong>Main Content (Two Columns):</strong>
-                            <ul>
-                                <li><em>Left Column (60%):</em> Interactive calendar displaying available dates and time
-                                    slots.</li>
-                                <li><em>Right Column (40%):</em> "Next Lesson" countdown card and a list of recent
-                                    resource downloads.</li>
-                            </ul>
-                        </li>
-                        <li><strong>Footer:</strong> Centered copyright info and contact links.</li>
-                    </ul>
+        <section class="newsletter">
+            <h2>Free English Tips</h2>
+            <p>Subscribe to our newsletter for weekly grammar tips and vocabulary lists.</p>
+            <form action="#" method="get">
+                <div class="form-row">
+                    <label for="news-name">Name</label>
+                    <input type="text" id="news-name" name="news-name" placeholder="Your Name" required>
                 </div>
+                <div class="form-row">
+                    <label for="news-email">Email</label>
+                    <input type="email" id="news-email" name="news-email" placeholder="Your Email" required>
+                </div>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
 
-                <div class="wireframe-box">
-                    <h3>Mobile View</h3>
-                    <ul>
-                        <li><strong>Header:</strong> Logo centered. Hamburger menu icon on the top right for navigation.
-                        </li>
-                        <li><strong>Hero Section:</strong> Stacked welcome message.</li>
-                        <li><strong>Main Content (Single Column):</strong>
-                            <ul>
-                                <li><em>Top Block:</em> "Next Lesson" summary card for immediate visibility.</li>
-                                <li><em>Middle Block:</em> A simplified, vertically scrolling list of available
-                                    dates/times instead of a full grid calendar.</li>
-                                <li><em>Bottom Block:</em> Recent resource downloads.</li>
-                            </ul>
-                        </li>
-                        <li><strong>Footer:</strong> Stacked copyright and contact links.</li>
-                    </ul>
+        <section class="features">
+            <h2>Focus Areas</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <img src="images/conversation.jpg" alt="Conversational English">
+                    <h3>Conversational Fluency</h3>
+                    <p>Build confidence in speaking naturally in day-to-day situations.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="images/business.jpg" alt="Business English">
+                    <h3>Business English</h3>
+                    <p>Learn terminology for meetings, presentations, and professional emails.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="images/technical.jpg" alt="Technical Vocabulary">
+                    <h3>Technical Vocabulary</h3>
+                    <p>Specialized lessons for engineers and tech professionals.</p>
                 </div>
             </div>
         </section>
     </main>
+
+    <footer>
+        <p> &copy; 2026 | Speak Up with Chris | Christensen KOH </p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/facebook-square.svg" alt="Follow on Facebook">
+            </a>
+            <a href="https://youtube.com">
+                <img src="images/youtube.svg" alt="Watch on YouTube">
+            </a>
+            <a href="https://whatsapp.com">
+                <img src="images/whatsapp.svg" alt="Message on Whatsapp">
+            </a>
+        </nav>
+    </footer>
 
 </body>
 
