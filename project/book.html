@@ -20,96 +20,112 @@
 
     <header>
         <img src="images/logo.webp" alt="Speak up logo">
-        <nav>
+        <button id="menu" aria-label="Main Menu">☰</button>
+        <nav class="nav">
             <ol>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Me</a></li>
                 <li><a href="book.html">Book a session</a></li>
-                <li><a href="review.html">Reviews</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ol>
         </nav>
     </header>
 
     <main>
-
-        <div class="trips-hero">
-            <h1>Available Adventures</h1>
-        </div>
-
-        <section class="trip-cta">
-            <p>Ready to book your next adventure or have questions?</p>
-            <a href="contact.html" class="cta-button">Contact Us Now</a>
+        <section class="booking-welcome">
+            <h1>Ready to Find Your Voice?</h1>
+            <p>Whether you are prepping for a promotion in the engineering field or just want to speak more naturally
+                during
+                your travels, we have a path for you. Choose the mentor that best fits your goals.</p>
         </section>
 
-        <section class="trip-descriptions">
-            <div class="trip-card">
-                <img src="images/adventure-3.jpg" alt="Salmon River Trip">
-                <h2>Salmon River</h2>
-                <p>The Salmon River offers a mix of scenic calm waters and thrilling rapids. Perfect
-                    for families and beginners looking for a fun getaway.</p>
+        <section class="mentor-grid">
+            <div class="mentor-card">
+                <img src="images/profile.webp" alt="Christensen KOH">
+                <h2>Christensen</h2>
+                <p class="tagline">The Technical Specialist</p>
+                <ul>
+                    <li><strong>Specialty:</strong> Business & Technical English, Interview Prep.</li>
+                    <li><strong>Experience:</strong> Mechanical Engineer and Software Developer.</li>
+                    <li><strong>Skills:</strong> Specialized vocabulary for tech and maritime professionals,
+                        French-to-English
+                        transitions.</li>
+                    <li><strong>Preferred Audience:</strong> Engineers, IT students, and professionals aiming for career
+                        growth.
+                    </li>
+                </ul>
+                <a href="booking-form.html?tutor=Christensen" class="cta-button">Book with Christensen</a>
             </div>
-            <div class="trip-card">
-                <img src="images/adventure-4.jpg" alt="Desolation Canyon Trip">
-                <h2>Desolation Canyon</h2>
-                <p>Explore the rugged beauty of Desolation Canyon. This trip features class III
-                    rapids and hikes to historic sites along the river banks.</p>
-            </div>
-            <div class="trip-card">
-                <img src="images/adventure-5.jpg" alt="Grand Canyon Trip">
-                <h2>Grand Canyon</h2>
-                <p>The ultimate rafting experience. Spend days navigating the legendary Colorado
-                    River with intense rapids and breathtaking views.</p>
+
+            <div class="mentor-card">
+                <img src="images/mifa.webp" alt="Maria KOH">
+                <h2>Maria</h2>
+                <p class="tagline">The Confidence Architect</p>
+                <ul>
+                    <li><strong>Specialty:</strong> Conversational Fluency & General English.</li>
+                    <li><strong>Experience:</strong> Professional Language Tutor with a passion for educational joy.
+                    </li>
+                    <li><strong>Skills:</strong> Building speaking confidence, natural pronunciation, and creative
+                        language
+                        games.</li>
+                    <li><strong>Preferred Audience:</strong> Beginners, travelers, and students looking for a relaxed,
+                        fun
+                        environment.</li>
+                </ul>
+                <a href="booking-form.html?tutor=Maria" class="cta-button">Book with Maria</a>
             </div>
         </section>
 
-        <section class="trip-table-section">
-            <h2>Trip Comparison</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Trip Name</th>
-                        <th>Difficulty</th>
-                        <th>Duration</th>
-                        <th>Cost</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Salmon River</td>
-                        <td>Beginner</td>
-                        <td>3 Days</td>
-                        <td>$450</td>
-                    </tr>
-                    <tr>
-                        <td>Desolation Canyon</td>
-                        <td>Intermediate</td>
-                        <td>5 Days</td>
-                        <td>$750</td>
-                    </tr>
-                    <tr>
-                        <td>Grand Canyon</td>
-                        <td>Advanced</td>
-                        <td>7 Days</td>
-                        <td>$1200</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+        <section class="social-proof">
+            <div class="reviews-container">
+                <h2>Success Stories</h2>
+                <div class="review-item">
+                    <p>"Christensen helped me master the technical terms I needed for my promotion interview. I felt
+                        like a
+                        professional from day one!"</p>
+                    <span>- Engineering Student</span>
+                </div>
+                <div class="review-item">
+                    <p>"Learning with Maria is the highlight of my week. I'm no longer afraid to order food or ask for
+                        directions in English."</p>
+                    <span>- Travel Enthusiast</span>
+                </div>
+            </div>
 
+            <div class="faq-container">
+                <h2>Frequently Asked Questions</h2>
+                <details>
+                    <summary>What platforms do you use for lessons?</summary>
+                    <p>We primarily use Zoom and Google Meet, but we can accommodate other platforms if needed.</p>
+                </details>
+                <details>
+                    <summary>Do you provide learning materials?</summary>
+                    <p>Yes! We provide custom-made slides, vocabulary lists, and interactive tools tailored to your
+                        specific
+                        focus area.</p>
+                </details>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p> &#9827; &copy; 2026 | White Water Rafting | Christensen KOH &#9827; </p>
+        <p>&copy; &#9827; <span id="current-year">2026</span> &#9827; Christensen KOH | Ivory Coast</p>
+        <p><span id="lastModified">Last Modified: </span></p>
         <nav class="socialmedia">
-            <a href="https://facebook.com">
+            <a href="https://www.facebook.com/share/1C8kSKyYR3/">
                 <img src="images/facebook-square.svg" alt="Contact us on Facebook">
             </a>
-            <a href="https://youtube.com">
+
+            <a href="https://youtube.com/@speakupwithchris?si=g4VvS9MkQFQYVb50">
                 <img src="images/youtube.svg" alt="Visit our youtube channel">
+
             </a>
-            <a href="https://whatsapp.com">
+            <a href="https://WA.me/79528366025">
                 <img src="images/whatsapp.svg" alt="Contact us on Whatsapp">
+            </a>
+
+            <a href="https://www.instagram.com/chris2dios?igsh=YTR2MGM5dmRsa3p5">
+                <img src="images/instagram.svg" alt="Contact us on Instagram">
             </a>
         </nav>
     </footer>
