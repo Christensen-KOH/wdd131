@@ -143,12 +143,12 @@ section {
     text-align: center;
 }
 
-.hero img{
+.hero img {
     display: block;
 }
 
-.hero article{
-    position: absolute;
+.hero article {
+    position: relative;
     width: 100%;
     bottom: 0;
     background: rgba(203, 215, 225, 0.9);
