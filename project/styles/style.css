@@ -459,3 +459,31 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+/*Confirmation */
+.confirmation-container {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.success-card {
+    background: white;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 50px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    border-top: 8px solid var(--primary-color);
+}
+
+.success-icon {
+    font-size: 4rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.success-card p {
+    font-size: 1.1rem;
+    margin-top: 15px;
+    color: var(--accent1-color);
+}

@@ -36,13 +36,13 @@
             <h1>Secure Your Spot</h1>
             <p>Complete the details below to start your journey toward English fluency.</p>
         </section>
-    
-        <form id="lesson-booking-form" action="#" method="post" class="styled-form">
+
+        <form id="lesson-booking-form" action="confirmation.html" method="get" class="styled-form">
             <div class="form-section">
                 <label for="tutor-display">Selected Mentor</label>
                 <input type="text" id="tutor-display" name="tutor" readonly class="readonly-input">
             </div>
-    
+
             <div class="form-grid">
                 <div class="form-group">
                     <label for="student-name">Full Name</label>
@@ -53,13 +53,13 @@
                     <input type="email" id="student-email" name="email" placeholder="john@example.com" required>
                 </div>
             </div>
-    
+
             <div class="form-section">
                 <label for="lesson-date">Preferred Lesson Date & Time</label>
                 <input type="datetime-local" id="lesson-date" name="lesson-time" required>
                 <small>We will confirm the final slot based on availability.</small>
             </div>
-    
+
             <div class="form-section">
                 <label for="english-level">Current English Level</label>
                 <select id="english-level" name="level">
@@ -68,13 +68,14 @@
                     <option value="advanced">Advanced</option>
                 </select>
             </div>
-    
+
             <div class="form-section">
                 <label for="goal">Primary Learning Goal</label>
                 <textarea id="goal" name="goal" rows="3"
-                    placeholder="e.g., Prepping for a promotion interview or traveling to Europe..." required></textarea>
+                    placeholder="e.g., Prepping for a promotion interview or traveling to Europe..."
+                    required></textarea>
             </div>
-    
+
             <button type="submit" class="cta-button">Confirm Booking Request</button>
         </form>
     </main>

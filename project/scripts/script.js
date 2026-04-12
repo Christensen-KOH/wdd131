@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    /* --- Footer Logic --- */
+    /* Footer */
     const currentYear = new Date().getFullYear();
     const yearElement = document.getElementById("current-year");
     const modifiedElement = document.getElementById("lastModified");
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
         modifiedElement.textContent = "Last Modified: " + document.lastModified;
     }
 
-    /* --- Mentor Auto-Fill Logic (For Booking Page) --- */
+    /* Mentor Auto-Fill (For Booking Page) */
     const urlParams = new URLSearchParams(window.location.search);
     const selectedTutor = urlParams.get('tutor');
     const tutorInput = document.getElementById('tutor-display');
@@ -31,7 +31,6 @@ document.addEventListener("DOMContentLoaded", () => {
             mainnav.classList.toggle('show');
             hambutton.classList.toggle('show');
 
-            // Toggle the icon between ☰ and ✖
             if (hambutton.textContent === "☰") {
                 hambutton.textContent = "✖";
             } else {
@@ -39,4 +38,4 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }
-}); // This was the missing closing brace!
+});
